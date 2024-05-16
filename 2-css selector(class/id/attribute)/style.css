@@ -1,0 +1,70 @@
+
+/* class selector */
+
+li {
+    font-weight: 700;
+}
+
+.html {
+    color: rgb(255, 0, 0);
+}
+
+.css {
+    color: blue;
+}
+
+.js {
+    color: rgb(198, 198, 0);
+}
+
+.react {
+    color: rgb(39, 176, 240);
+}
+
+/* ID selector */
+
+#html {
+    font-size: 32px;
+}
+
+#css {
+    font-size: 28px;
+}
+
+#js {
+    font-size: 24px;
+}
+
+#react {
+    font-size: 20px;
+}
+
+ /* ATTRIBUTE selector  ANYTHING WRITTEN IN HTML TAG and having = in that is called attributr like <h1 subham="hi" >ok</h1> , here subham is an attribute */
+
+ [class] {
+    background-color: bisque;
+ }
+
+ [subham="frontend"] {
+    background-color: red;
+ }
+
+ /* [subham] {
+    background-color: yellow;
+ } */
+
+ /* ul p {
+    background-color: skyblue;
+ } */
+
+ .web p {
+    background-color: skyblue;
+ }
+
+h1:hover {
+    background-color: aquamarine;
+}
+
+[subham="learning"]:hover {
+    color: blue;
+}

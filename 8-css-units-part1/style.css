@@ -1,0 +1,41 @@
+
+/*  CSS UNIT - PX AND %  */
+
+
+body {
+    margin: 0;
+ 
+}
+
+section {
+    background-color: blueviolet;
+    /* padding: 25px; */
+    padding: 10%;
+    width: 400px;
+    box-sizing: border-box;
+    margin: 5px;
+}
+
+.box{
+    background-color: chartreuse;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 10%;
+    margin: 10%;
+    
+
+/*  HERE the % UNIT OF FONT-SIZE TAKING FROM THE PARENT OF BOX ELEMENT // MEANS THE FONT-SIZE OF SECTION TAG.
+IN GENERAL THE FONT-SIZE OF BODY/HTML ELEMENT IS 16PX. */
+
+/* WE CANT USE % UNIT WITH BORDER PROPERTY */
+}
+
+
+/* % UNIT IN CSS 
+% UNIT IS A RELATIVE PROPERTY. 
+WHEN WE GIVE % UNIT IN 
+
+1) WIDTH - IT RELATED TO PARENT WIDTH
+2) HEIGHT - IT RELATED TO PARENT HEIGHT
+3) PADDING/ MARGIN - IT RELATED TO PARENT WIDTH ONLY
+4) IT WILL NOT WORK ON BORDER */

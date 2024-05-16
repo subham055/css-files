@@ -1,0 +1,50 @@
+
+/* // MEDIA TYPES PLUS MEDIA FEATURES  =  MEDIA QUERIES  // */
+
+.square {
+    background-color: black;
+    height: 300px;
+    width: 300px;
+    border: 25px solid blue;
+    box-sizing: border-box;
+    /* -webkit-print-color-adjust: exact; */
+}
+
+ /* @media (orientation: portrait) and (width >= 400px) {
+    .square {
+        border: 25px solid red;
+        background-color: aquamarine;
+    }
+} */
+
+
+ /* @media (700px >= width >= 400px) {
+    .square {
+        border: 25px solid red;
+        background-color: aquamarine;
+    }
+} */
+
+
+/* @media (max-width: 700px) and (min-width: 400px) {
+    .square {
+        border: 25px solid red;
+        background-color: aquamarine;
+    }
+} */
+
+/* @media ( min-height: 300px) and (max-height: 400px) {
+    .square {
+        background-color: aquamarine;
+        border: 25px solid red;
+    }
+} */
+
+
+/* @media print and (width >= 700px) {
+    .square {
+        border: 25px solid red;
+        background-color: aquamarine;
+    }
+} */
+

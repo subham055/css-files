@@ -1,0 +1,52 @@
+
+
+/*   IN CSS THE 2ND MOST POWERFULL STYLE IS INLINE STYLE  specificity is 1000 */
+
+/*   AND THE MOST POWERFULL ONE IS !IMPORTANT.
+    IT CAN BEAT EVERY SPECIFICITY IN TERMS OF IMPORTANCE  */
+
+
+/* li selector specificity is 001 */
+
+li#html{
+    background-color: coral !important;
+}
+
+li {
+    background-color: coral !important;
+}
+
+/* ONLY !IMPORTANT CAN BEAT ANOTHER !IMPORTANT */
+
+li {
+    background-color: cadetblue !important;
+}
+
+li {
+    background-color: aquamarine;
+}
+
+/* . (DOT) selector specificity is 010 */
+.html {
+    background-color: bisque;
+}
+
+/* # selector specificity is 100 */
+
+#html {
+    background-color: blueviolet;
+}
+
+ /* id and class both applied so the specificity is 1 1 0  (100+10) */
+
+#html.html {
+    background-color: blue;
+}
+
+ /* specificity 1+100+10+100 = 2 1 1 */
+
+li#html.html#html {
+    background-color: green;
+}
+
+

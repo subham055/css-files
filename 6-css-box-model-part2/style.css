@@ -1,0 +1,81 @@
+
+ /* MARGIN DO NOT INCLUDE WITH HEIGHT AND WIDTH  */
+
+/* DEFAULT MARGIN OF THE BODY IS 8PX */
+
+ /* IN BOX-SIZING: CONTENT-BOX  HEIGHT AND WIDTH WILL ADD WITH PADDING AND BORDER BUT CONTENT SIZE MEANS HEIGHT AND WIDTH OF CONTENT WILL STAY SAME..
+
+ BUT IN BOX-SIZING: BORDER-BOX  HEIGHT AND WIDTH WILL REMAIN SAME BUT CONTENT SIZE MEANS HEIGHT AND WIDTH OF CONTENT WILL DECREASE. */
+
+* {
+    box-sizing: border-box;
+}
+
+/* .parent {
+    background-color: blue;
+} */
+
+body {
+    margin: 0;
+}
+
+h1 {
+    /* margin: 0px; */
+    background-color: aqua;
+}
+
+p {
+    /* margin: 0; */
+    background-color: cornflowerblue;
+}
+
+.one {
+    background-color: aquamarine;
+    color: blue;
+    width: 300px;
+    padding: 25px;
+    border: 4px solid blueviolet;
+    border-right-color: chocolate;
+    margin: 40px;
+    border-radius: 10px;
+
+/* THE BY DEFAULT COLOR OF BORDER IS TEXT COLOR */
+
+/* in content-box box sizing width will increase coz margin and padding will add with it but height stay fixed..  
+but in border-box box width sizing remain same but height will increase to makeup that extra width. */
+
+    /* box-sizing: content-box;    */
+    box-sizing: border-box;
+
+    /* word-break: break-all; */
+}
+
+.two {
+    background-color: burlywood;
+    width: 300px;
+    padding: 25px;
+    border: 6px solid palevioletred;
+    margin: 40px;
+
+    border-radius: 20px;
+
+/* OUTLINE WORKS LIKE SAME AS BORDER BUT LIKE MARGIN IT DO NOT INCLUDE WITH HEIGHT AND WIDTH. */
+    outline: 20px solid greenyellow;
+}
+
+.three {
+    /* background-color: aqua; */
+    background-image: linear-gradient(red,yellow,blue);
+    width: 295px;
+    padding: 44px 0px 0px 38px;
+    border: 8px solid palevioletred;
+    border-right-color: blueviolet;
+    border-left-color: darkblue;
+    margin: 40px;
+
+    /* overflow: hidden; */
+    height: 295px;
+    border-radius: 100%;
+    outline: 10px solid greenyellow;
+}
+

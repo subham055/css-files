@@ -1,0 +1,98 @@
+/* // TRANSFORM, TRANSLATE,TRANSITION, SHADOWS, OPACITY, ALPHA CHANNEL   */
+
+/* when we use rgba then only bg-color will transparent 
+but when we use opacity then the bg-color along with every elements within will transparent.   */
+
+.box {
+    background-color: rgba(4, 117, 79, 0.489);
+    width: 100px;
+    height: 100px;
+
+    /* background-color: green; */
+    opacity: 0.6;
+
+    /* // height and width stay same. it looks like we r using magnifying glass to zoom in */
+    /* and if zoom in / zoom out from center  */
+
+    transform: scale(2);
+    transform-origin: 0 0;
+
+    /* transform-origin: 100% 100%; */
+
+    /* if using transform-origin then the left-top corner will not move */
+}
+
+/* ------------------------------------------- */
+
+/* it just rotates the box according to the degree you provide */
+
+main {
+    background-color: beige;
+    color: white;
+    width: 600px;
+    height: 300px;
+    position: relative;
+    margin: 40px;
+}
+
+.box2 {
+    background-color: blueviolet;
+    width: 300px;
+    height: 200px;
+
+    /* transform: rotate(-45deg); */
+
+    /* to position the box in center of viewport */
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    /* transform: translateY(100%);
+    transform: translateX(100%); */
+
+
+    /* if we set translateX(100%) then it will move 100% of its WIDTH space towards X axis
+
+if we set translateY(100%) then it will move 100% of its HEIGHT space towards Y axis */
+
+    /* // translate creates gap like margin but unlike margin it does not push the surrounding elements.
+it wull move upper to the surrounding element */
+
+
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, .3);
+
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, .5);
+
+    background-image: url(https://images.unsplash.com/photo-1714182356074-99c7c843e197?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNXx8fGVufDB8fHx8fA%3D%3D);
+
+    /* background-size: contain; */
+
+/* in CONTAIN it will maintain the image ratio so that emage will repeate. to prevent that we have to use NO REPEATE... */
+
+    background-repeat: no-repeat;
+
+/* to crop the emage and set to the whole width we can use COVER property. */
+
+    background-size: cover;
+    
+/* and to adjust the crop we can use background-position-x // y  */
+
+    background-position-y: -160px;
+    background-position-x: -20px;
+
+
+    /* transition: all 2000ms; */
+    transition: transform 2000ms;
+}
+
+
+.box2:hover {
+    /* transform: rotate(45deg); */
+
+    transform: translate(-50%, -50%)rotate(45deg)scale(1.3);
+
+}
+
+

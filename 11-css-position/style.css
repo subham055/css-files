@@ -1,0 +1,115 @@
+/* Css Position */
+
+/* //  STATIC // RELATIVE // ABSOLUTE // FIXED // STICKY   */
+
+
+/* // UNSET position,  set any position value to default means static. */
+
+/* // in STATIC POSITION top,right,bottom,left will not work. */
+
+
+/* // in relative it always takes place in parent element height */
+
+div {
+    background-color: chartreuse;
+    position: relative;
+
+    top: 10px;
+    bottom: 10px;
+
+    /* if we set top and bottom val at the same time 
+// bottom val will not work */
+
+    right: 40px;
+    left: 40px;
+
+    /* if we set right and left val at the same time 
+// right val will not work */
+
+
+    /* inset: 5px; */
+
+    /* if we want to set top,right,bottom,left all the value same then we need to right inset property */
+}
+
+ul {
+    position: relative;
+    background-color: blueviolet;
+    height: 200px;
+    /* overflow: scroll; */
+}
+
+.css-element {
+    background-color: cornflowerblue;
+    position: absolute;
+
+    top: 40px;
+    /* bottom: 40px; */
+
+    left: 60px;
+    right: 60px;
+
+    /* inset: 100px; */
+}
+
+/* if we select position absolute to any element then the element will not take any space /height but stay at the same position if we dont move..
+
+and the below elements will take the above element space. */
+
+/* in position absolute and its any level of parent position relative ( anything without static ) then the absolute element will attach with parent element 
+
+and if we dont set any level of parent position relative then the absolute position element will stay attach with view port. */
+
+
+
+/* ------------------------------------------------ */
+
+
+
+/*   position fixed always stay attached with view-port */
+
+/* if we select position fixed to any element then the element will not take any space /height but stay at the same position if we dont move.
+
+
+and the below elements will take the above element space. */
+
+.js-element {
+    background-color: chocolate;
+    position: fixed;
+    top: 80px;
+    left: 10px;
+    right: 10px;
+    /* bottom: 10px; */
+    /* inset: 50px; */
+}
+
+/* // in sticky it always takes place in parent element height // works same as relative */
+
+/* it always attached / stay in between parent element. we cant move it outside parent using top/rihgt/etc. */
+
+/* if we want to move it top/bottom between parent element then we have use 2 properties to parent element. 1) overflow: scrool, 2) have to give some height to parent component.
+
+*/
+.react-element {
+    background-color: hotpink;
+    /* position: sticky;
+    top: 10px; */
+
+/* bottom/right/left dont work here */
+    /* bottom: 10px;
+    right: 10px;
+    left: 10px; */
+
+}
+
+
+body {
+    overflow: scroll;
+}
+
+header {
+    background-color: red;
+    position: sticky;
+    top: 1px;
+}
+

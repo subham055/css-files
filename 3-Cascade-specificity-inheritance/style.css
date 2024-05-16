@@ -1,0 +1,48 @@
+/* class selector */
+
+/* here 1st bg color will cancel out and 2nd color will be the output. 
+This is called Cascade 
+
+the priority of lower value is greater than the upper val */
+
+/* INLINE STYLE HAS MORE IMPORTANCE THAN ID */
+
+
+/* li selector specificity is 001 */
+li {
+    background-color: aqua;
+}
+
+li {
+    background-color: aquamarine;
+}
+
+/* . (DOT) selector specificity is 010 */
+.html {
+    background-color: bisque;
+}
+
+/* # selector specificity is 100 */
+
+#html {
+    background-color: blueviolet;
+}
+
+ /* id and class both applied so the specificity is 1 1 0  (100+10) */
+
+#html.html {
+    background-color: blue;
+}
+
+ /* specificity 1+100+10+100 = 2 1 1 */
+
+li#html.html#html {
+    background-color: chartreuse;
+}
+
+/* specificity = 1 28 0  less then 2 1 1 */
+
+.html.html.html.html.html.html.html.html.html.html.html.html.html.html.html.html.html.html.html.html.html.html.html.html.html.html.html.html#html {
+    background-color: brown;
+}
+

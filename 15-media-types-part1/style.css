@@ -1,0 +1,33 @@
+
+
+.square {
+    background-color: black;
+    height: 300px;
+    width: 300px;
+    border: 25px solid blue;
+    box-sizing: border-box;
+
+    /* //to print background-color: in fireFox */
+    /* print-color-adjust: exact; */
+
+    /* //to print background-color: in chrome and  fireFox */
+    /* -webkit-print-color-adjust: exact; */
+
+}
+
+/* // @media screen/ print/ all   // */
+
+/* // CASCADE RULE ALSO APPLY IN @MEDIA QUERY.  
+// IF WE WRITE THE @MEDIA CODE AT THE TOP, THEN IT WILL BE OVERRIDED BY .SQUARE CLASS.. */
+
+
+@media screen {
+    h1 {
+        color: red;
+    }
+    .square {
+        border: 25px solid red;
+        background-color: aquamarine;
+    }
+}
+

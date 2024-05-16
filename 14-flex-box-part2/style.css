@@ -1,0 +1,177 @@
+
+/* Flexbox is a one-dimensional layout method for arranging items in rows or columns.  */
+
+
+/* MAIN AXIS SITUATED IN FLEX-DIRECTION AND THE OPPOSITE AXIS IS CROSS AXIS AND ITS OPPOSITE HAPPENS WHEN WE SET FLEX-DIRECTION: COLUMN..
+*/
+
+
+ /* SHORTCUT OF FLEX-GROW / FLEX-SHRINK / FLEX-BASICS is ==  flex: 1 0 100PX;  // not recomended to use */
+ 
+ /* 
+// WHEN FLEX-DIRECTION IS ROW , FLEX-BASIC CONTROLS WIDTH.
+// WHEN FLEX-DIRECTION IS COLUMN , FLEX-BASIC CONTROLS HEIGHT. 
+*/
+
+/* // IF WE DONT USE SHRINK THE CONTENT WILL WILL OVERFLOW IF WE REDUCE VIEWPORT WIDTH..
+IF WE DONT WANT OVERFLOW WE HAVE TO USE flex-wrap to the parent. INSTEAD OF flex-shrink:.
+SO THE CONTENT WILL COME TO NEW LINE. // */
+
+
+/* if we use display flex then only MARGIN left/righ/button/top = AUTO works otherwise,
+
+if we do not use display flex then  margin left/righ = AUTO works,  top/ button will not work. 
+
+if we use display flex and margin= auto in an chield element then the element will set to pure midddle of the parent element .
+we dont need to use justify content and align-items on thst case to set the element on middle.
+*/
+
+/*  if we give margin-block to a element, then MARGIN TOP AND BOTTOM is applied to that element...
+
+if we give margin-inline to a element, then MARGIN LEFT AND RIGHT is applied to that element... 
+*/
+
+
+/* IN HTML BY DFAULT EVERY ELEMENT'S  ORDER IS 0 
+ IF WE ENTER THE ORDER OF A ELEMENT MORE THAN 0 IT WILL MOVE AT THE LAST OF A WEB PAGE 
+ STARTING FROM LOWER TO  HIGHER ORDER  //  negative values also applicable*/
+
+/* if WE USE flex-grow: 1; IT WILL COVER WHOLE OF THE EXTRA SAPCES AND GROW THE ELEMENT TO THE RIGHT SIDE WHOLE WIDTH. */
+
+
+/* TO USE ALIGN-CONTENT: CENTER  WE HAVE TO USE  FLEX-WRAP: WRAP ALONG WITH IT.. */
+
+  /* // In display: inline-flex its working like display inline. in inline flex if there is some extra space available in width then the next element will come and cover that space..  */
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.parent {
+    padding: 10px;
+    border: 4px solid orangered;
+    display: flex;
+    /* display: inline-flex; */
+
+    height: 80vh;
+
+    /* justify-content: center; */
+    /* align-items: center; */
+    
+    /* align-content: center; */
+
+    /* flex-wrap: wrap; */
+
+    /* to set both row & column 16px gap */
+    /* gap: 16px; */
+
+    /* to set only row gap */
+    /* row-gap: 16px; */
+
+    /* to set only column gap */
+    /* column-gap: 16px; */
+
+    /* flex-direction: column; */
+
+
+}
+
+
+/* // to target direct children not childrens of children */
+
+.parent>span {
+    border: 4px solid rgb(211, 25, 180);
+    background-color: aqua;
+
+    /* width: 100%; */
+
+    /* // TO SET BASE WIDTH WE CAN USE flex-basis // 
+IF WE SET PARENT HEIGHT AND FLEX DIRECTION COLUMN THEN THE HEIGHT OF EVERY FLEX ITEMS WILL BE BASE HEIGHT THAT WAS SET USING FLEX-BASIC
+*/
+
+    /* flex-basis: 100%; */
+    /* flex-basis: 100PX; */
+
+    /* order: 0; */
+}
+
+.parent p {
+    border: 4px solid blue;
+    background-color: chartreuse;
+    margin: 0;
+
+    /* margin-block: 0;
+    margin-inline: 16px;
+
+    margin: 0 16px  */
+
+    
+    /* width: 100%; */
+
+    /* // TO SET THE P ELEMENT PURE MIDDLE OF PARENT ELEMENT.. */
+
+    /* margin: auto; */
+
+    /*  margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: auto; */
+
+    /* flex-basis: 100%; */
+    /* flex-basis: 100px; */
+
+    /* order: 10; */
+
+}
+
+.parent a {
+    border: 4px solid green;
+    background-color: blanchedalmond;
+    text-decoration: none;
+    /* height: 150px; */
+
+    /* align-self: center; */
+
+    /* margin-inline: auto; */
+
+    /* width: 100%; */
+
+    /* flex: 1 1 100px; */
+
+    /* flex-basis: 100%; */
+    /* flex-basis: 100px; */
+
+    /* flex-shrink: 0; */
+    /* flex-grow: 1; */
+
+    /* order: -1; */
+}
+
+
+.parent>* {
+    /* width: 200PX; */
+
+    width: 300px;
+    /* flex-shrink: 0; */
+
+    /* // IF WE DONT USE SHRINK THE CONTENT WILL WILL OVERFLOW IF WE REDUCE VIEWPORT WIDTH..
+IF WE DONT WANT OVERFLOW WE HAVE TO USE flex-wrap to the parent. INSTEAD OF flex-shrink:.
+SO THE CONTENT WILL COME TO NEW LINE. // */
+
+    /* margin-left: 16px; */
+
+}
+
+
+/* margin left property will not work on the 1st element. WE CAN USE THIS method INSTEAD OF GAP PROPERTY. */
+
+/* .parent>* + * {
+    margin-left: 16px;
+} */
+
+

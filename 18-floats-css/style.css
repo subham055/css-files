@@ -1,0 +1,38 @@
+/* // img is a inline replaced element thats why we can use height and width here//
+
+// an img is an inline replaced element unlike span for example which is an inline non-replaced element and we can define width/height on replaced element. */
+
+/* // When it comes to non-replaced elements 
+The 'width' property does not apply.
+The 'height' property does not apply. */
+
+
+img {
+    width: 300px;
+    float: left;
+    /* float: right; */
+    margin-right: 1rem;
+}
+
+.container {
+    background-color: aqua;
+    display: flow-root;
+}
+
+.para {
+    /* clear: left; */
+}
+
+.para1 {
+    /* clear: left; */
+    /* background-color: aqua; */
+}
+
+.para2 {
+    /* clear: left; */
+}
+
+.para3 {
+    /* clear: left; */
+    /* clear: right; */
+}

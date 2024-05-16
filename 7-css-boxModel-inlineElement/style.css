@@ -1,0 +1,83 @@
+
+
+body {
+    margin: 0;
+}
+
+p {
+    background-color: aquamarine;
+    width: 300px;
+    height: 100px;
+    padding: 25px;
+    box-sizing: border-box;
+    border: 10px solid;
+    margin: 25PX;
+    outline: 10px solid hotpink;
+   
+}
+
+.html {
+    background-color: aquamarine;
+    width: 140px;
+    height: 80px;
+    padding: 25px;
+    box-sizing: border-box;
+    border: 10px solid;
+    margin: 25PX;
+    outline: 10px solid green;
+    display: inline-block;
+}
+
+ /* SPAN , ANCHOR, BOLD TAG ARE NON REPLACED TAG //  IN NON REPLACED INLINE ELEMENT, height and width NOT works.  */
+span {
+    background-color: aqua;
+    width: 140px;
+    height: 80px;
+    padding: 25px;
+    box-sizing: border-box;
+    border: 10px solid;
+    margin: 25PX;
+    outline: 10px solid green;
+    display: inline-block;  
+
+}
+
+  /* REPLACED INLINE ELEMENT // height and width works here  img, iframe, video  tags are replaced inline */
+
+img {
+    background-color: aqua;
+    width: 140px;
+    height: 80px;
+    padding: 10px;
+    border: 10px solid;
+    margin: 25px;
+    outline: 10px solid green;
+    box-sizing: border-box;
+}
+
+iframe {
+    width: 360px;
+    height: 240px;
+    margin: 25px;
+    background-color: aquamarine;
+
+}
+
+video {
+    width: 360px;
+    height: 240px;
+    margin: 25px;
+    background-color: cadetblue;
+}
+
+div {
+    background-color: aqua;
+    width: 80px;
+    height: 80px;
+    padding: 25px;
+    box-sizing: border-box;
+    border: 10px solid;
+    margin: 25PX;
+    display: inline-block;
+}
+

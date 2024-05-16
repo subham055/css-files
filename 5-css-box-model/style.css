@@ -1,0 +1,27 @@
+
+/*  IN CASE OF WIDTH IF WE NOT SET THE PARENT WIDTH STILL THE CHILD WIDTH USING % WILL WORK.
+BUT IN CASE OF HEIGHT THE CHILD % HEIGHT, WILL NOT WORK IF WE NOT SET THE PARENT HEIGHT IN PIXELS.  */
+
+.parent {
+    width: 800px;
+    height: 600px;
+    background-color: blue;
+}
+
+.one {
+    background-color: aquamarine;
+    /* width: 500px; */
+    /* max-width: 500px; */
+    /* min-height: 250px; */
+    
+    width: 70%;
+    height: 50%;
+    /* word-break: break-all; */
+}
+
+.one-child {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+

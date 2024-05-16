@@ -1,0 +1,75 @@
+
+/* // em vs rem */
+
+/* em always takes the value from its parent element's fontSize. */
+
+
+/* // to manipulate the rem value // */
+html {
+    font-size: 10px;
+}
+
+
+ body {
+    margin: 0;
+}
+
+h1 {
+    background-color: aqua;
+}
+
+ /* // By default 1 em = 16px
+
+in section element we use font size 2 em it means , it takes the value from its parent element's font size and that is body. by default in body font-size is 16px. 
+
+so here is section element fontSize 2em means 32px */
+
+section {
+    background-color: aquamarine;
+    width: 50vw;
+    border: 1vw solid red;
+    padding: 6vw;
+    margin: 5vw;
+    font-size:2em;
+}
+
+/*  here in  box element the fontSize is 2em, that ,means it takes the value from its parent section element. 
+
+in section fontSize is 32px. 
+
+so for box element 1em = 32px.  so, here we have used fontSize in 2em means 64px in box element. */
+
+.box {
+    background-color: blueviolet;
+    margin: 25px;
+    /* box-sizing: border-box; */
+    width: 5em;
+    font-size: 2em;
+    padding: 1em;
+    border: 0.5em solid;
+}
+
+/* here in box element if we only use width 5em it means it takes the val from its parents fontSize.
+so it willbe 32px * 5 = 160px
+
+but in box element if we use both fontSize and width then the fontSize become 32*2 = 64px. 
+
+And also thw width become 64*5 = 320px.  
+
+(imp) */
+
+
+.box2 {
+    background-color: chartreuse;
+    width: 10rem;
+    font-size: 2rem;
+    padding: 1rem;
+    border: 1rem solid;
+    margin: 2rem;
+}
+
+/* // BY DEFAUT 1rem = 16px. its not depends on the parent element.
+
+it totally depends on the (root) html tag / html element
+if we set the fontSize of HTML element is 10px.then throughout the program the 1rem value will be 10px. */
+
